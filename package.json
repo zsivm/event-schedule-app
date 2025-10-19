@@ -1,0 +1,27 @@
+{
+  "name": "toddleractivity",
+  "version": "1.0.0",
+  "description": "This app tracks the schedule of events which are fed to the application through a json file in a given format.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsivm/ToddlerActivity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsivm/ToddlerActivity/issues"
+  },
+  "homepage": "https://github.com/zsivm/ToddlerActivity#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
