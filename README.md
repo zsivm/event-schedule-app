@@ -24,3 +24,7 @@ Example:
         "location": "the location of the event (building, room, floor, stage, square)"
     }
 ]
+
+Changelogs:
+- added highlight to the currently active event
+- provided the basic functionality of the projekt display events + basic styling

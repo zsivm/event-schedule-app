@@ -1,22 +1,22 @@
 body {
-    font-family: sans-serif;
-    padding: 20px;
+  font-family: sans-serif;
+  padding: 20px;
 }
-  #events {
-    margin-top: 20px;
+#events {
+  margin-top: 20px;
 }
 .event {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
 }
 .event.active {
-    background-color: #d4f8d4; /* light green */
-    border-color: #4caf50;
+  background-color: #d4f8d4; /* light green */
+  border-color: #4caf50;
 }
 .event.upcoming {
-    background-color: #fff8d6; /* light yellow */
-    border-color: #ffeb3b;
+  background-color: #fff8d6; /* light yellow */
+  border-color: #ffeb3b;
 }
