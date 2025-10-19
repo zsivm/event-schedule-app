@@ -3,7 +3,7 @@ export class UIRenderer {
         this.container = document.getElementById(containerId);
     }
 
-     renderEvents(events) {
+     renderEvents(events, activeEventTitle = null) {
         if (!this.container) return;
         this.container.innerHTML = '';
 
@@ -15,6 +15,11 @@ export class UIRenderer {
         for (const event of events) {
             const div = document.createElement('div');
             div.className = 'event';
+
+            // highlight active event
+            if (event.title === activeEventTitle) {
+                div.classList.add('active');
+            }
 
             div.innerHTML = `
                 <h3>${event.title}</h3>
