@@ -36,8 +36,9 @@ export class ScheduleManager {
     async init() {
         await this.loadSchedule();
         await NotificationService.requestPermission();
+        const oneMinute = 60 * 1000;
 
         this.checkAndNotify();
-        setInterval(() => this.checkAndNotify(), 60 * 1000);
+        setInterval(() => this.checkAndNotify(), oneMinute);
     }
 }
