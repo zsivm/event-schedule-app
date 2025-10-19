@@ -1,10 +1,12 @@
 import { getTodayTime } from "./TimeUtils.js";
 import { NotificationService } from "./NotificationService.js";
 
+export const oneMinute = 60 * 1000;
 export class ScheduleManager {
+
   constructor(scheduleUrl, uiRenderer, notificationLeadMinutes = 5) {
     this.scheduleUrl = scheduleUrl;
-    this.notificationLeadMinutes = notificationLeadMinutes * 60 * 1000;
+    this.notificationLeadMinutes = notificationLeadMinutes * oneMinute;
     this.events = [];
     this.uiRenderer = uiRenderer;
   }
@@ -53,7 +55,6 @@ export class ScheduleManager {
   async init() {
     await this.loadSchedule();
     await NotificationService.requestPermission();
-    const oneMinute = 60 * 1000;
 
     this.checkAndNotify();
     setInterval(() => this.checkAndNotify(), oneMinute);
