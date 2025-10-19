@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+.event {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+}
+
+.event strong {
+    color: #333;
+}
